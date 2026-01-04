@@ -1,0 +1,91 @@
+import React from "react";
+import { ContactPage } from "../../Data/FooterData";
+import { IoArrowRedoSharp } from "react-icons/io5";
+
+const ContactSec = () => {
+  return (
+    <section className="w-full flex flex-col justify-center items-center bg-[#F6EEE3] pt-15 ">
+      <div className="main w-full border mx-[215px]">
+        <div className="w-full flex justify-center items-center gap-25 border">
+          {/* for Details*/}
+          <div className="w-[720px] flex flex-col justify-center items-center gap-14 border">
+            <div className=" w-full flex flex-col justify-center items-start gap-10">
+              {/* for Heading */}
+              <div className="w-full flex flex-col justify-center items-start gap-6">
+                <h1 className="mainHeading text-shadow-pro text-[50px]  font-extrabold text-[#1E3A8A]">
+                  Let’s Start a{" "}
+                  <span
+                    className="bg-gradient-to-r from-[#1E3A8A] via-[#2563EB] to-[#38BDF8] bg-clip-text font-extrabold text-transparent">
+                    Conversation
+                  </span>{" "}
+                  That Matters
+                </h1>
+                <p className="mainParagraph font-bold">
+                  Have a project idea or business requirement? Tell us about
+                  your needs and our team will reach out to discuss how we can
+                  deliver the right technology solutions for you.
+                </p>
+              </div>
+              {/* for contact details */}
+              <div className="flex  w-full">
+                {ContactPage.map((item, index) => {
+                  const Icon = item.icons;
+
+                  const Content = (
+                    <div className="flex justify-center items-start ">
+                      <Icon className="footerIcon transition-all duration-700 hover:scale-110 hover:text-blue-500" />
+                      <div className="flex flex-col group relative h-[22px] w-[265px] overflow-hidden">
+                        <span className="text animationtext">{item.label}</span>
+                        <span className="text animationtexthover">
+                          {item.label}
+                        </span>
+                      </div>
+                    </div>
+                  );
+                  return item.to ? (
+                    <a
+                      key={index}
+                      href={item.to}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="transition hover:opacity-80"
+                    >
+                      {Content}
+                    </a>
+                  ) : (
+                    <div key={index}>{Content}</div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* for ads */}
+            <div className=" bg-[#ffffff7c] w-full cart flex justify-center items-center gap-2 pr-2 ">
+              {/* title Section */}
+              <div className="flex p-[30px]  flex-col justify-center items-start gap-6">
+                <h2 className="subHeading w-50 text-shadow-pro">Want to Work or Join Us?</h2>
+                <div className="flex justify-center items-start gap-2">
+                  <span className="text text-[14px]">Fill the form below</span>
+                  <IoArrowRedoSharp className="icon text-[16px]" />
+                </div>
+              </div>
+              {/* image section */}
+              <img className=" w-80 h-80" 
+              src="Assets/All Images/ContactAdsimg.png"
+              alt="contact ads img"/>
+            </div>
+          </div>
+
+          {/* For Form */}
+          <div className="w-[625px] flex justify-center items-center cart-shadow  bg-white rounded-lg h-158 px-[30px] py-[50px]">
+            <div className="border border-black w-full h-full">
+              <h1>contact form</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ContactSec;
