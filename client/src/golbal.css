@@ -1,0 +1,131 @@
+@reference "tailwindcss";
+
+@layer base {
+  /* h1 {
+        @apply text-center text-2xl font-bold text-black;
+    } */
+
+  .main {
+    @apply px-5 sm:px-10 md:px-14 lg:px-20 flex flex-col justify-center items-center w-full gap-8 sm:gap-10 md:gap-12 lg:gap-14;
+  }
+}
+
+@layer components {
+  .mainHeading {
+    @apply text-[25px] sm:text-[30px] md:text-[35px] lg:text-[45px] font-semibold capitalize tracking-wider leading-4 lg:leading-14 text-[#505050];
+  }
+
+  .subHeading {
+    @apply text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-bold capitalize  tracking-wider leading-4 lg:leading-6  text-black;
+  }
+
+  .subheadingbg{
+    @apply bg-gray-300 rounded-3xl py-0.5 px-5
+  }
+
+  .label {
+    @apply text-[14px] font-medium capitalize  tracking-wider leading-4 lg:leading-6 text-black;
+  }
+
+  .input {
+    @apply w-full px-3 py-2 border rounded-md outline-none focus:border-[#0B97B8] focus:border-2 bg-white text-black  placeholder:text-[14px] font-medium capitalize  tracking-wider leading-4 lg:leading-6 transition-all duration-700;
+  }
+
+  .listText {
+    @apply text-[14px] lg:text-[16px] font-bold capitalize  tracking-wider text-black;
+  }
+  .text {
+    @apply text-[14px] lg:text-[16px] text-black font-bold capitalize tracking-wider text-start;
+  }
+
+  .mainParagraph {
+    @apply text-[12px] sm:text-[14px] md:text-[16px] lg:text-[16px] font-medium capitalize  tracking-wide leading-7 text-[#7A7A7A];
+  }
+  .iconHeading {
+    @apply text-[20px] text-[#0B97B8] shrink-0 transition-all duration-1200 hover:scale-110 hover:text-blue-500;
+  }
+
+  .icon {
+    @apply text-[20px] sm:text-[25px] md:text-[30] lg:text-[35px] text-[#0B97B8] shrink-0 transition-all duration-1200 hover:scale-110 hover:text-blue-500;
+  }
+
+  .footerHeading {
+    @apply text-[16px] lg:text-[20px] text-white tracking-wide font-semibold text-start;
+  }
+
+  .footertext {
+    @apply text-[14px] lg:text-[16px] text-white tracking-wide text-start;
+  }
+
+  .footerIcon {
+    @apply text-[#00AEEF] text-[16px] lg:text-[22px] shrink-0 transition-all duration-300 hover:scale-110 hover:text-blue-500;
+  }
+  .button {
+    @apply bg-[#00AEEF] text-white font-bold px-6 py-2.5 rounded-lg tracking-widest whitespace-nowrap  hover:bg-blue-400 transition-all duration-700;
+  }
+
+  /* For Text Animation start  */
+  .animationtext {
+    @apply absolute left-0 top-0 w-full h-full transition-transform duration-1000 ease-in-out group-hover:-translate-y-full;
+  }
+  .animationtexthover {
+    @apply absolute left-0 top-full w-full h-full transition-transform duration-1000 ease-in-out group-hover:-translate-y-full;
+  }
+  /* For Text Animation end  */
+}
+
+@layer utilities {
+  .cart-shadow {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  .cart {
+    transition: box-shadow 0.7s ease-in-out;
+  }
+
+  .cart:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+  .cart2 {
+    transition: box-shadow 0.7s ease-in-out;
+  }
+
+  .cart2:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+
+  .normal-shadow {
+    box-shadow: rgba(255, 255, 255, 0.678) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+
+  .text-shadow-pro {
+    transition: text-shadow 0.7s ease-in-out;
+  }
+  .text-shadow-pro:hover {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 6px 12px rgba(0, 0, 0, 0.25),
+      0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* reusable utility class */
+.animate-slide-up-delay {
+  animation: slideUp 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
