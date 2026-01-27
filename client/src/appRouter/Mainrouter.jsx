@@ -1,0 +1,25 @@
+import React from 'react'
+import {Routes, Route} from 'react-router-dom'
+import Home from '../Pages/Home'
+import About from '../Pages/About'
+import Services from '../Pages/Services'
+import Blog from '../Pages/Blog'
+import Contact from '../Pages/Contact'
+import ServiceEnquiry from '../Pages/ServiceEnquiry'
+
+const MainRouter = () => {
+  return (
+    <div>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/services' element={<Services />} />
+        <Route path='/blog' element={<Blog />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/service_enquiry' element={<ServiceEnquiry />} />
+      </Routes>
+    </div>
+  )
+}
+
+export default MainRouter
