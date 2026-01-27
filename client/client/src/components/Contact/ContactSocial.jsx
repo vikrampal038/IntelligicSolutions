@@ -1,0 +1,70 @@
+import React from "react";
+import { ContactSocialData } from "../../Data/ContatcData";
+
+const ContactSocial = () => {
+  return (
+    // bg-[#F6EEE3]
+    <section className="w-full flex flex-col justify-center items-center  py-20">
+      <div className="main w-full">
+        <div className="w-full flex flex-col justify-center items-center gap-10">
+          {/* for Heading */}
+          <div className="w-full flex flex-col justify-center items-center gap-3">
+            <h1 className="subHeading font-extrabold tracking-widest">
+              Community Engagement
+            </h1>
+            <h2 className="mainHeading w-1/2 text-center">
+              Join the Community
+            </h2>
+            <p className="mainParagraph w-1/2 text-center">
+              Become a Part of our thriving community, where you can connect
+              with like-minded Individuals, collaborate on projects, and grow
+              together.
+            </p>
+          </div>
+
+          {/* for Social Account  details */}
+          <div className="grid grid-cols-1 lg:grid-cols-4 justify-center items-center gap-14  w-[1200px]">
+            {ContactSocialData.map((item, index) => {
+              const Icon = item.icons;
+              const Content = (
+                <div className=" cart2 cart relative overflow-hidden group transition-transform duration-700 ease-in-out flex flex-col justify-center items-center gap-4 bg-white p-[30px] rounded-lg ">
+                  {/* Square overlay */}
+
+                  <Icon className="icon transition-all duration-700 hover:scale-110 hover:text-blue-500" />
+                  <div className="flex flex-col justify-center items-center gap-2">
+                    <h3 className="subHeading">{item.title}</h3>
+                    <h3 className="mainParagraph text-center">{item.tag}</h3>
+                  </div>
+
+                  <div className="flex flex-col group relative h-[22px] w-full overflow-hidden items-center justify-center">
+                    <span className="text text-center text-[#00AEEF] animationtext">
+                      {item.contain}
+                    </span>
+                    <span className="text text-center text-[#00AEEF] animationtexthover">
+                      {item.contain}
+                    </span>
+                  </div>
+                </div>
+              );
+              return item.to ? (
+                <a
+                  key={index}
+                  href={item.to}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition hover:opacity-80"
+                >
+                  {Content}
+                </a>
+              ) : (
+                <div key={index}>{Content}</div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ContactSocial;
