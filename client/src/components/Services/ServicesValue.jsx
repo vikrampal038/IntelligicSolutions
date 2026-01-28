@@ -7,7 +7,7 @@ import { HiSparkles } from "react-icons/hi2";
 const ServicesValue = () => {
   return (
     <section
-      className="w-full flex flex-col justify-between items-center py-20"
+      className="topmain pb-25"
       style={{
         backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
         url(${servicebg})`,

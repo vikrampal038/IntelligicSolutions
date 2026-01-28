@@ -15,13 +15,13 @@ const Contact = () => {
       {/* <GlobalHero item={heroItem} /> */}
       {/* for Page Contain */}
       <div
-        style={{
-          backgroundImage: `url(${Allbg})`,
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundAttachment: "scroll", // instead of fixed
-        }}
+        // style={{
+        //   backgroundImage: `url(${Allbg})`,
+        //   backgroundRepeat: "no-repeat",
+        //   backgroundPosition: "center",
+        //   backgroundSize: "cover",
+        //   backgroundAttachment: "scroll", // instead of fixed
+        // }}
       >
         <ContactHero />
         <Contacform />

@@ -5,7 +5,7 @@ import { HiSparkles } from "react-icons/hi2";
 const AboutSkill = () => {
   return (
     // bg-[#F6EEE3]
-    <section className="w-full flex flex-col justify-between items-center bg-white  py-20">
+    <section className="topmain pb-25 bg-white">
       <div className="main flex flex-row justify-between items-center  w-full">
         {/* left Side Bar */}
         <div className="w-1/2 flex flex-col justify-center items-start gap-8">

@@ -6,7 +6,7 @@ const ContactHero = () => {
   return (
     // h-142
     <section
-      className="w-full flex flex-col justify-center items-center pt-20"
+      className="topmain pt-15"
     >
       <div className="main w-full">
         <div className="w-full flex flex-col justify-center items-center gap-10">
@@ -32,7 +32,7 @@ const ContactHero = () => {
             {ContactData.map((item, index) => {
               const Icon = item.icons;
               const Content = (
-                <div className=" cart-shadow relative overflow-hidden group transition-transform duration-700 ease-in-out flex flex-col justify-center items-start border gap-4 bg-white p-[20px] rounded-lg ">
+                <div className="normal-shadow relative overflow-hidden group transition-transform duration-700 ease-in-out flex flex-col justify-center items-start border gap-4 bg-white p-[20px] rounded-lg ">
                   {/* Square overlay */}
                   <span className=" absolute inset-0 bg-[#dad7d242] -translate-x-full group-hover:translate-x-0 transition-transform duration-1200 ease-in-out z-0"></span>
                   <Icon className="footerIcon transition-all duration-700 hover:scale-110 hover:text-blue-500" />
@@ -45,9 +45,6 @@ const ContactHero = () => {
                     <span className="text text-[#00AEEF]">
                       {item.contain}
                     </span>
-                    {/* <span className="text text-[#00AEEF] underline animationtexthover">
-                      {item.contain}
-                    </span> */}
                   </div>
                 </div>
               );

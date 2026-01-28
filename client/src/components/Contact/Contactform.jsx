@@ -59,19 +59,19 @@ const Contactform = () => {
   };
   return (
     // bg-[#B6B4B6]
-    <section className="w-full flex flex-col justify-center items-center  pt-20">
+    <section className="topmain">
       <div className="main w-full">
         <div className="w-full flex flex-col justify-center items-center gap-10">
           {/* for Heading */}
           <div className="w-full flex flex-col justify-center items-center gap-3">
-            <h1 className="subHeading text-shadow-pro font-extrabold tracking-widest">
+            <h1 className="subHeading xl:text-[25px] text-shadow-pro font-extrabold tracking-widest">
               Just Fill out the form and hit submit
             </h1>
             <h2 className="text text-center">We're here to assist</h2>
           </div>
 
           {/* for contact details */}
-          <div className="flex cart-shadow justify-center py-[30px] px-[20px] w-150 items-center gap-14 
+          <div className="flex normal-shadow justify-center py-[30px] px-[20px] w-150 items-center gap-14 
             rounded-lg ">
             <form
               onSubmit={handleSubmit}

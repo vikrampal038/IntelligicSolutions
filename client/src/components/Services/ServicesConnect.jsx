@@ -6,7 +6,7 @@ import bgInner from '/Assets/All Images/connectblue.png';
 const Section = () => {
   return (
     <section
-      className="w-full flex flex-col justify-center items-center py-20"
+      className="topmain pb-25"
       style={{
         backgroundImage: `url(${bgMain})`,
         backgroundAttachment: "fixed",

@@ -2,7 +2,7 @@ import React from "react";
 import HomeHeading from "../../common/HomeHeading";
 const HomeBlog = () => {
   return (
-    <section className="w-full flex flex-col justify-center items-center pt-20 border">
+    <section className="topmain border">
       <div className="main w-full">
         <div className=" w-full flex flex-col justify-center items-center gap-14">
           {/* Heading Section */}

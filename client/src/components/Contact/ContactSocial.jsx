@@ -5,7 +5,7 @@ import { HiSparkles } from "react-icons/hi2";
 const ContactSocial = () => {
   return (
     // bg-[#F6EEE3]
-    <section className="w-full flex flex-col justify-center items-center  pt-20">
+    <section className="topmain">
       <div className="main w-full">
         <div className="w-full flex flex-col justify-center items-center gap-10">
           {/* for Heading */}
@@ -27,11 +27,11 @@ const ContactSocial = () => {
           </div>
 
           {/* for Social Account  details */}
-          <div className="grid grid-cols-1 lg:grid-cols-4 justify-center items-center gap-14  w-[1200px]">
+          <div className="grid grid-cols-1 lg:grid-cols-4 justify-center items-center gap-14  w-400">
             {ContactSocialData.map((item, index) => {
               const Icon = item.icons;
               const Content = (
-                <div className=" cart2 cart relative overflow-hidden group transition-transform duration-700 ease-in-out flex flex-col justify-center items-center gap-4 bg-white p-[30px] rounded-lg ">
+                <div className=" cart2 cart border relative overflow-hidden group transition-transform duration-700 ease-in-out flex flex-col justify-center items-center gap-5 bg-white p-[30px] rounded-lg ">
                   {/* Square overlay */}
 
                   <Icon className="icon transition-all duration-700 hover:scale-110 hover:text-blue-500" />
@@ -39,9 +39,8 @@ const ContactSocial = () => {
                     <h3 className="subHeading">{item.title}</h3>
                     <h3 className="mainParagraph text-center">{item.tag}</h3>
                   </div>
-
                   <div className="flex flex-col group relative h-[22px] w-150 overflow-hidden items-center justify-center">
-                    <span className="text text-center text-[#00AEEF]">
+                    <span className="text text-center text-[#00AEEF] hover:text-[#085d7c] transition-all duration-700 ease-in-out">
                       {item.contain}
                     </span>
                   </div>

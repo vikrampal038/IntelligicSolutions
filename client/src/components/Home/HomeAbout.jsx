@@ -5,7 +5,7 @@ import { HomeSocial } from "../../Data/HomeData";
 
 const HomeAbout = () => {
   return (
-    <section className="w-full section bg-white pt-20">
+    <section className="topmain bg-white">
       <div className="main flex flex-row justify-between items-center w-full">
         {/* Left Side Sction */}
         <motion.div

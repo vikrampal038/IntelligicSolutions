@@ -6,7 +6,7 @@ import { HiSparkles } from "react-icons/hi2";
 const AboutSec = () => {
   return (
     // bg-[#F6EEE3]
-    <section className="w-ful bg-white  pb-14 pt-20">
+    <section className="topmain bg-white pt-15 pb-25">
       <div className="main flex flex-row justify-between items-center  w-full">
         {/* Left Side Sction */}
         <div className="w-1/2 flex justify-center items-center">

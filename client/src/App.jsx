@@ -7,7 +7,7 @@ import "react-phone-input-2/lib/style.css";
 
 const App = () => {
   return (
-    <div className='flex flex-col w-full justify-center items-center'>
+    <div className='flex flex-col w-full justify-center items-cente'>
       <Navbar />
       <div className='flex flex-col w-full'>
       <MainRouter />

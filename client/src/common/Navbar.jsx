@@ -14,7 +14,7 @@ const Navbar = () => {
             <NavLink to='/services'>Services</NavLink>
             <NavLink to='/blog'>Blog</NavLink>
             <NavLink to='/contact'>Contact</NavLink>
-            <NavLink to='/service_enquiry'>ServiceEnquiry</NavLink>
+            {/* <NavLink to='/service_enquiry'>ServiceEnquiry</NavLink> */}
         </div>
 
         {/* for whatsap button  */}

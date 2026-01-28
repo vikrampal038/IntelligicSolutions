@@ -29,7 +29,7 @@ const cardVariants = {
 
 const HomeChoosUs = () => {
   return (
-    <section className="w-full flex flex-col justify-center items-center pt-20">
+    <section className="topmain ">
       <div className="main w-full">
         <div className=" w-full flex flex-col justify-center items-center gap-14">
           {/* Heading Section */}

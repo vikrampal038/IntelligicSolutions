@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import { LiaHandshakeSolid } from "react-icons/lia";
 import { FaLaptopCode, FaCalendarCheck } from "react-icons/fa6";
+import { FaUsers } from "react-icons/fa";
 
 export const HomeSocial = [
   {
@@ -80,3 +81,42 @@ export const HomeServicesData = [
       "We perform tasks such as finding and booking venues, liaising with clients and suppliers, handling logistics, managing budgets and invoicing, organizing accreditation, managing risk, and presenting post-event reports",
   },
 ];
+
+export const testimonial = [
+  {
+    icons: FaUsers,
+    name: "Shreya Pandey",
+    title: "Customer",
+    description: "Their expertise in IT consulting, software development is impressive. Every solution they provide is not only innovative but also highly practical, ensuring that we can integrate it seamlessly into our operations"
+  },
+  {
+    icons: FaUsers,
+    name: "Vivek Srivastav",
+    title: "Customer",
+    description: "Excellent services. We are happy with our new website designed by Intelligic Team. They made it awesomely, fast loading website, great design and user friendly. Thanks, Keep shining."
+  },
+  {
+    icons: FaUsers,
+    name: "Furqan Kashmiri",
+    title: "Customer",
+    description: "One of the best people I ever met Nikhil Singh i gave less one start because of they have in initial stag"
+  },
+  {
+    icons: FaUsers,
+    name: "Shweta",
+    title: "Customer",
+    description: "Thanks for creating such an amazing and attractive website.I will definitely Suggest people to take service from intelligic solutions only."
+  },
+  {
+    icons: FaUsers,
+    name: " Shiv Singh",
+    title: "Customer",
+    description: "Best ERP solutions I must tell them problem killer."
+  },
+  {
+    icons: FaUsers,
+    name: "Ankit Shukla",
+    title: "Customer",
+    description: "Great place for work ,nice environment,best for fresher."
+  },
+]

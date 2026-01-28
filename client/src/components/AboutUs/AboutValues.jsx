@@ -4,7 +4,7 @@ import { HiSparkles } from "react-icons/hi2";
 
 const AboutValues = () => {
   return (
-    <section className="w-full flex flex-col justify-center items-center bg-[#0A1A2F] py-20">
+    <section className="topmain pb-25 bg-[#0A1A2F]">
       <div className="main w-full">
         <div className=" w-full flex flex-col justify-center items-center gap-14">
           {/* Heading Section */}

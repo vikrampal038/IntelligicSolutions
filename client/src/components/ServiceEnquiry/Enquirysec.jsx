@@ -64,7 +64,7 @@ const Enquirysec = () => {
     });
   };
   return (
-    <section className="w-full flex flex-col justify-center items-center  py-20">
+    <section className="topmain pb-25">
       <div className="main w-full">
         <div className="w-full flex flex-col justify-center items-center gap-10">
           {/* for Heading */}

@@ -8,11 +8,15 @@
   .main {
     @apply px-5 sm:px-10 md:px-15 lg:px-20 xl:px-25 flex flex-col justify-center items-center w-full gap-8 sm:gap-10 md:gap-12 lg:gap-14;
   }
+
+  .topmain{
+    @apply w-full flex flex-col justify-center items-center pt-25;
+  }
 }
 
 @layer components {
   .mainHeading {
-    @apply text-[25px] sm:text-[30px] md:text-[35px] lg:text-[45px] font-semibold capitalize tracking-wider leading-4 lg:leading-14 text-[#505050];
+    @apply text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-semibold capitalize tracking-wider leading-4 lg:leading-14 text-[#505050];
   }
 
   .subHeading {
