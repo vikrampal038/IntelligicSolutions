@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { FaUsers } from "react-icons/fa";
+import { testimonial } from "../Data/HomeData";
+import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
   CarouselContent,
@@ -7,12 +9,18 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { testimonial } from "../Data/HomeData";
-import Autoplay from "embla-carousel-autoplay";
 
 const Testiminoal = () => {
   const [api, setApi] = useState(null);
   const [selectedIndex, setSelectedIndex] = useState(0);
+
+  const autoplay = useRef(
+    Autoplay({
+      delay: 4000,
+      stopOnInteraction: false,
+      stopOnMouseEnter: true,
+    })
+  );
 
   useEffect(() => {
     if (!api) return;
@@ -29,17 +37,11 @@ const Testiminoal = () => {
 
   return (
     <section className="w-full">
-      <div className="max-w-6xl mx-auto px-4 relative">
+      <div className="md:w-4xl xl:w-6xl mx-auto px-4 relative">
         <Carousel
           setApi={setApi}
           opts={{ align: "center", loop: true }}
-          plugins={[
-            Autoplay({
-              delay: 4000, // slow autoplay
-              stopOnInteraction: false,
-              stopOnMouseEnter: true,
-            }),
-          ]}
+          plugins={[autoplay.current]}
           className="embla"
         >
           <CarouselContent className="items-center">
@@ -50,7 +52,7 @@ const Testiminoal = () => {
                   selectedIndex === index ? "is-selected" : ""
                 }`}
               >
-                <div className="cart-shadow  w-[330px] h-[310px] bg-[#f7f7f7] text-center rounded-xl p-6 shadow-lg transition-all duration-500 flex flex-col gap-4">
+                <div className="cart-shadow  w-[330px] h-[280px] lg:h-[310px] bg-[#f7f7f7] text-center rounded-xl p-6 shadow-lg transition-all duration-500 flex flex-col gap-4">
                   <div className="flex justify-center">
                     <FaUsers className="text-black text-6xl" />
                   </div>
@@ -69,8 +71,8 @@ const Testiminoal = () => {
             ))}
           </CarouselContent>
 
-          <CarouselPrevious className="-left-14" />
-          <CarouselNext className="-right-14" />
+          <CarouselPrevious className="-left-3 sm:-left-6 md:-left-10 lg:-left-14 opacity-0 pointer-events-none xl:opacity-100 xl:pointer-events-auto" />
+          <CarouselNext className="-right-3 sm:-right-6 md:-right-10 lg:-right-14 opacity-0 pointer-events-none xl:opacity-100 xl:pointer-events-auto" />
         </Carousel>
       </div>
     </section>

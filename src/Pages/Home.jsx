@@ -4,17 +4,15 @@ import HomeAbout from "../components/Home/HomeAbout.jsx";
 import HomeChoosUs from "../components/Home/HomeChoosUs.jsx";
 import HomeServices from "../components/Home/HomeServices.jsx";
 import HomePortfolio from "../components/Home/HomePortfolio.jsx";
-import HomeBlog from "../components/Home/HomeBlog.jsx";
 import HomeTestimonial from "../components/Home/HomeTestimonial.jsx";
 
 const Home = () => {
-  // 👉 FIND + STORE
   return (
     <div>
       {/* Hero Section */}
       <HomeHero />
       <div>
-        <section className="bg-gradient-brand-50-100-200 pb-14 pt-14">
+        <section className="bg-gradient-brand-50-100-200 pb-8  lg:pb- lg:pt-10">
           <HomeAbout />
         </section>
         <section className="bg-gradient-brand-200-100-50">
@@ -35,7 +33,3 @@ const Home = () => {
 };
 
 export default Home;
-
-{
-  /* <HomeBlog /> */
-}

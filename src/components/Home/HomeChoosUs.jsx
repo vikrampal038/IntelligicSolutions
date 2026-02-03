@@ -29,7 +29,7 @@ const cardVariants = {
 
 const HomeChoosUs = () => {
   return (
-    <section className="topmain">
+    <section className="topmain w-full">
       <div className="main w-full">
         <div className=" w-full flex flex-col justify-center items-center gap-14">
           {/* Heading Section */}
@@ -40,7 +40,7 @@ const HomeChoosUs = () => {
 
           {/* Maine Section */}
           <motion.div
-            className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+            className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
@@ -60,12 +60,12 @@ const HomeChoosUs = () => {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-60 object-center rounded-xl"
+                  className="w-full sm:w-120 h-60 object-center rounded-xl"
                 />
 
                 <div className="flex flex-col gap-4 justify-center items-center">
                   <h3 className="subHeading">{item.title}</h3>
-                  <p className="mainParagraph text-center leading-5 xl:text-[14px]">
+                  <p className="mainParagraph">
                     {item.description}
                   </p>
                 </div>

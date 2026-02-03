@@ -14,7 +14,7 @@ const HomeServices = () => {
           />
 
           {/* Maine Section */}
-          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-6 ">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4  gap-6 ">
             {HomeServicesData.map((item, index) => {
               const Icon = item.icons;
               return (

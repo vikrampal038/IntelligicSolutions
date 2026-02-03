@@ -5,21 +5,21 @@ import { HiSparkles } from "react-icons/hi2";
 const AboutChoose = () => {
   return (
     <section className="topmain">
-      <div className="main w-full">
-        <div className="  w-full flex flex-col justify-center items-center gap-14">
+      <div className="main flex flex-col lg:flex-row justify-between items-center w-full">
+        <div className="w-full flex flex-col justify-center items-center gap-14">
           {/* Heading Section */}
-          <div className="w-full flex flex-col gap-4 ">
+          <div className="w-full flex flex-col justify-center items-center md:items-start gap-4 ">
             {/* heading */}
-            <div className="subheadingbg w-fit flex justify-center items-center gap-3">
+            <div className="subheadingbg w-fit flex justify-center items-start  gap-3">
               <HiSparkles className="iconHeading" />
               <h1 className="subHeading">Why Choose Us</h1>
             </div>
             {/* subHeading */}
-            <div className="flex justify-between items-start">
-              <h2 className="mainHeading w-1/2 ">
+            <div className="flex justify-between items-start flex-col lg:flex-row gap-4">
+              <h2 className="mainHeading w-full lg:w-1/2 ">
                 The Ultimate Source of Software
               </h2>
-              <p className="mainParagraph w-1/2 text-black  ">
+              <p className="mainParagraph w-full lg:w-1/2 text-black  ">
                 Delivering innovative, reliable, and customized software
                 solutions that empower businesses, enhance efficiency, and drive
                 growth in today’s competitive digital landscape.

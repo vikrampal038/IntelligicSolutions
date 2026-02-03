@@ -27,7 +27,7 @@ const SkillsSection = () => {
   return (
     <div ref={sectionRef} className="flex justify-center items-center">
       <div className="flex justify-center items-center p-2 w-full">
-        <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-10 p-5 valBox-Shadow  rounded-lg  w-fit mx-auto place-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 sm:gap-12 gap-5 p-5 valBox-Shadow  rounded-lg  w-fit mx-auto place-items-center">
           {Skills.map((skill, i) => (
             <CircularProgress
               key={i}

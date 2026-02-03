@@ -9,9 +9,9 @@ const AboutSec = () => {
   return (
     // bg-[#F6EEE3]
     <section className="topmain">
-      <div className="main flex flex-row justify-between items-center  w-full">
+      <div className="main flex flex-col lg:flex-row justify-between items-center  w-full">
         {/* Left Side Sction */}
-        <div className="w-1/2 flex justify-center items-center">
+        <div className=" w-full lg:w-1/2 flex justify-center items-center">
           <img
             className="cart w-140 h-auto rounded-2xl"
             src="Assets/All Images/AboutSec2.png"
@@ -20,7 +20,7 @@ const AboutSec = () => {
         </div>
 
         {/* Right Side Bar */}
-        <div className="  w-1/2 flex flex-col justify-center items-start gap-12">
+        <div className=" w-full lg:w-1/2 flex flex-col justify-center items-start gap-12">
           {/* Heading */}
           <div className="w-full flex flex-col justify-center items-center gap-10 ">
             <div className="w-full flex flex-col justify-center items-center gap-4">
@@ -54,7 +54,7 @@ const AboutSec = () => {
                   to={item.path}
                   className="flex items-center gap-4 transition w-full"
                 >
-                  <BiSolidCheckShield className="footerIcon" />
+                  <BiSolidCheckShield className="icon" />
                   <div className="flex flex-col group relative h-[22px] w-[250px] overflow-hidden">
                     <span className="listText animationtext">{item.title}</span>
                     <span className="listText animationtexthover">

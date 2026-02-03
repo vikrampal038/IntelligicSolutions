@@ -28,14 +28,3 @@ const About = () => {
 };
 
 export default About;
-
-// import GlobalHero from "../common/GlobalHero";
-// import { HeroData } from "../Data/HeroData";
-
-// const heroItem = HeroData.find((item) => item.page === "about");
-{
-  /* Hero Section */
-}
-{
-  /* <GlobalHero item={heroItem} /> */
-}

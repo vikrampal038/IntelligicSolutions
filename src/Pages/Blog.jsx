@@ -12,12 +12,3 @@ const Blog = () => {
 };
 
 export default Blog;
-
-// import GlobalHero from "../common/GlobalHero.jsx";
-// import { HeroData } from "../Data/HeroData.js";
-
-// const heroItem = HeroData.find((item) => item.page === "blog");
-
-// {Hero Section }
-// {<GlobalHero item={heroItem} /> }
-// {Page Contain }

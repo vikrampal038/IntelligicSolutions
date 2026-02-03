@@ -13,15 +13,3 @@ const ServiceEnquiry = () => {
 };
 
 export default ServiceEnquiry;
-
-// import { HeroData } from "../Data/HeroData";
-// import GlobalHero from "../common/GlobalHero";
-
-// 👉 FIND + STORE
-// const heroItem = HeroData.find((item) => item.page === "service_enquiry");
-{
-  /* Hero Section */
-}
-{
-  /* <GlobalHero item={heroItem} /> */
-}

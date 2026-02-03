@@ -7,7 +7,7 @@ import SocialIcons from "./common/SocialIcons";
 
 const App = () => {
   return (
-    <div className="flex flex-col w-full items-center">
+    <div className="flex flex-col w-full items-center overflow-x-hidden">
       {/* Fixed Side Icons */}
       <SocialIcons />
 

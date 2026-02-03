@@ -8,15 +8,15 @@ const AboutValues = () => {
       <div className="main w-full">
         <div className=" w-full flex flex-col justify-center items-center gap-14">
           {/* Heading Section */}
-          <div className="w-full flex flex-col gap-4 ">
+          <div className="w-full flex flex-col justify-center items-center md:items-start gap-4 ">
             {/* heading */}
-            <div className="w-fit subheadingbg flex justify-start items-center gap-3">
+            <div className="w-fit subheadingbg flex justify-center items-center gap-3">
               <HiSparkles className="iconHeading" />
               <h1 className="subHeading ">Our Values</h1>
             </div>
             {/* subHeading */}
             <div className="flex justify-between items-start">
-              <h2 className="mainHeading w-1/2 text-[#CCCCCC] ">
+              <h2 className="mainHeading w-full text-[#CCCCCC] ">
                 Advanced Software Made Simple
               </h2>
             </div>
