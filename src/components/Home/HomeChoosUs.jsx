@@ -55,15 +55,15 @@ const HomeChoosUs = () => {
                   boxShadow: "0px 18px 40px rgba(0,0,0,0.12)",
                 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
-                className=" flex bg-[#f7f7f7] flex-col justify-center items-center gap-6  rounded-lg p-[20px] border border-slate-500"
+                className=" flex bg-[#f7f7f7] flex-col justify-center items-center gap-6  rounded-lg border border-slate-500"
               >
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full sm:w-120 h-60 object-center rounded-xl"
+                  className="w-full sm:w-120 h-60 object-center rounded-xl rounded-b-none"
                 />
 
-                <div className="flex flex-col gap-4 justify-center items-center">
+                <div className="flex flex-col gap-4 justify-center items-center py-2 px-3">
                   <h3 className="subHeading">{item.title}</h3>
                   <p className="mainParagraph">
                     {item.description}

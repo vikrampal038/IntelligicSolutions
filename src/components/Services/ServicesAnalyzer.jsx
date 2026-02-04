@@ -1,4 +1,4 @@
-import React from "react";
+                            import React from "react";
 // import AccordionSec from "../../common/AccordionSec";
 import { useEffect, useRef } from "react";
 import AccordionBlock from "../../common/AccordionBlock";
@@ -16,11 +16,11 @@ const ServicesAnalyzer = () => {
 
   return (
     <section className="topmain">
-      <div className="main flex flex-row justify-between items-center  w-full">
+      <div className="main flex flex-col lg:flex-row justify-between items-center  w-full">
         {/* left Side Bar */}
-        <div className="w-1/2 flex flex-col justify-center items-start gap-8">
+        <div className=" w-full lg:w-1/2 flex flex-col justify-center items-start gap-8">
           {/* Heading */}
-          <div className="w-full flex flex-col justify-center items-start gap-6 ">
+          <div className="w-full flex flex-col justify-center items-center lg:items-start gap-6 ">
             <div className="subheadingbg w-fit flex justify-center items-center gap-3">
               <HiSparkles className="iconHeading" />
               <h1 className="subHeading">Big Data Analyzer</h1>
@@ -53,7 +53,7 @@ const ServicesAnalyzer = () => {
         </div>
 
         {/* Right Side SECTION */}
-        <div className="w-1/2 flex justify-center items-center">
+        <div className=" w-full lg:w-1/2 flex justify-center items-center">
           <AccordionBlock
             data={ServiceData}
             className="w-full xl:max-w-[600px]"

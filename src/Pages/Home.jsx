@@ -12,19 +12,19 @@ const Home = () => {
       {/* Hero Section */}
       <HomeHero />
       <div>
-        <section className="bg-gradient-brand-50-100-200 pb-8  lg:pb- lg:pt-10">
+        <section className="bg-gradient-brand-50-100-200  py-10 md:py-14 2xl:py-10">
           <HomeAbout />
         </section>
         <section className="bg-gradient-brand-200-100-50">
           <HomeChoosUs />
         </section>
-        <section className="bg-gradient-brand-50-100-200 py-24">
+        <section className="bg-gradient-brand-50-100-200  py-10 md:py-14 2xl:py-24">
           <HomePortfolio />
         </section>
         <section className="bg-gradient-brand-200-100-50">
           <HomeServices />
         </section>
-        <section className="bg-gradient-brand-50-100-200 py-24">
+        <section className="bg-gradient-brand-50-100-200  py-10 md:py-14 2xl:py-24">
           <HomeTestimonial />
         </section>
       </div>

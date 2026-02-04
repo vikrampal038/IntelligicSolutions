@@ -4,14 +4,14 @@ import {
   FaInstagram,
   FaFacebookF,
   FaLinkedinIn,
-  FaYoutube,
+  FaTelegramPlane,
 } from "react-icons/fa";
 
 const icons = [
   FaInstagram,
   FaFacebookF,
   FaLinkedinIn,
-  FaYoutube,
+  FaTelegramPlane,
 ];
 
 const container = {

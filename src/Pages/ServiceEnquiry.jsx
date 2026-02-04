@@ -5,7 +5,7 @@ import Enquirysec from "../components/ServiceEnquiry/Enquirysec";
 const ServiceEnquiry = () => {
   return (
     <div className="w-full">
-        <section className="bg-gradient-brand-50-100-200 pb-24 pt-14">
+        <section className="bg-gradient-brand-50-100-200  py-10 md:py-14 2xl:py-18">
           <Enquirysec />
         </section>
     </div>

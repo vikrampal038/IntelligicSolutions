@@ -3,38 +3,50 @@ import ServiceSec from "../components/Services/ServiceSec";
 import ServicesAnalyzer from "../components/Services/ServicesAnalyzer";
 import ServicesConnect from "../components/Services/ServicesConnect";
 import ServiceValue from "../components/Services/ServicesValue";
-import servicebg from "/Assets/All Images/Servicevaluebg.jpg";
+import DotGrid from "../components/ui/throttle";
+// import DotGrid from './DotGrid';
 
-const Services = () => {
+function Services() {
   return (
     <div className="relative overflow-hidden">
-      <section className="bg-gradient-brand-50-100-200 pb-24 pt-14">
+      <section className="bg-gradient-brand-50-100-200 py-10 md:py-14 2xl:py-18">
         <ServiceSec />
       </section>
-      <div
-        style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
-        url(${servicebg})`,
-          backgroundAttachment: "fixed",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-        }}
-      >
-        <section className="py-24">
-          <ServiceValue />
-        </section>
 
-        <section className="bg-white pt-24 pb-14">
-          <ServicesAnalyzer />
-        </section>
-        <section className="py-24">
-          <ServicesConnect />
-        </section>
+      <div className="relative overflow-hidden">
+        {/* Background for all three sections */}
+        <div className="fixed inset-0 -z-10">
+          <DotGrid
+            dotSize={5}
+            gap={15}
+            baseColor="#D3D3D3"
+            activeColor="#00AEEF"
+            proximity={120}
+            shockRadius={250}
+            shockStrength={5}
+            resistance={750}
+            returnDuration={1.5}
+          />
+        </div>
+
+        {/* Sections wrapper */}
+        <div className="relative z-10">
+          <section className="py-10 md:py-14 2xl:py-18">
+            <ServiceValue />
+          </section>
+
+          <section className="bg-white py-10 md:py-14 2xl:py-18">
+            <ServicesAnalyzer />
+          </section>
+
+          <section className="py-10 md:py-14 2xl:py-18">
+            <ServicesConnect />
+          </section>
+        </div>
       </div>
     </div>
   );
-};
+}
 
 export default Services;
 
@@ -56,3 +68,27 @@ export default Services;
 // {
 //    <Prism />
 // }
+
+{
+  /* <div
+        style={{
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+        url(${servicebg})`,
+          backgroundAttachment: "fixed",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
+        <section className=" py-10 md:py-14 2xl:py-18">
+          <ServiceValue />
+        </section>
+
+        <section className="bg-white  py-10 md:py-14 2xl:py-18">
+          <ServicesAnalyzer />
+        </section>
+        <section className=" py-10 md:py-14 2xl:py-18">
+          <ServicesConnect />
+        </section>
+      </div> */
+}

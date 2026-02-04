@@ -29,7 +29,6 @@ const ServiceSec = () => {
               <HiSparkles className="iconHeading" />
               <h1 className="subHeading">Our Services</h1>
             </div>
-            {/* <h1 className="subHeading">Our Services</h1> */}
             <h2 className="mainHeading ">Website Design And Development</h2>
           </div>
 

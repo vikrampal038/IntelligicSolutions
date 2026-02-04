@@ -10,7 +10,7 @@ const ServiceSection = ({ section }) => {
     >
       <div className="w-full flex flex-col justify-center items-start gap-3">
         <h3 className="subHeading">{section.sectionTitle}</h3>
-        <p className="mainParagraph w-1/2">{section.sectionPara}</p>
+        <p className="mainParagraph">{section.sectionPara}</p>
       </div>
 
       {/* Service Cart */}

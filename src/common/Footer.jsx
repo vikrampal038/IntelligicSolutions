@@ -202,7 +202,7 @@ const Footer = () => {
                   const Content = (
                     <div className="flex items-start gap-4">
                       <Icon className="footerIcon transition-all duration-700 hover:scale-110 hover:text-blue-500" />
-                      <span className="footertext tracking-wider leading-6 hover:text-gray-400 transition-all duration-700 ease-in-out">
+                      <span className="footertext tracking-wider leading-6 hover:text-gray-800 transition-all duration-700 ease-in-out">
                         {item.label}
                       </span>
                     </div>

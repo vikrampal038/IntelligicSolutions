@@ -2,7 +2,7 @@
 
 @layer base {
   .main {
-    @apply px-5 md:pl-20 md:pr-10 lg:pl-20 lg:pr-12 lg:px-15 xl:px-20 2xl:px-25 flex flex-col justify-center items-center w-full gap-8 sm:gap-10 md:gap-12 lg:gap-14;
+    @apply px-5 md:pl-20 lg:pl-20 xl:px-20 2xl:px-25 flex flex-col justify-center items-center w-full gap-8 sm:gap-10 md:gap-12 lg:gap-14;
   }
 
   .topmain{
@@ -32,14 +32,14 @@
   }
 
   .listText {
-    @apply text-[16px] lg:text-[18px] font-bold capitalize  tracking-wider text-black;
+    @apply text-[14px] lg:text-[16px] font-bold capitalize  tracking-wider text-black;
   }
   .text {
     @apply text-[14px] lg:text-[16px] text-black font-bold capitalize text-center lg:text-start;
   }
 
   .mainParagraph {
-    @apply text-[14px] sm:text-[16px] md:text-[18px] font-medium capitalize  tracking-wide leading-6 text-justify  text-[#4b4b4b];
+    @apply text-[14px] sm:text-[16px]  font-medium capitalize  tracking-wide leading-6 text-justify  text-[#4b4b4b];
   }
   .iconHeading {
     @apply text-[20px] text-[#0B97B8] shrink-0 hover:text-[#e0f6ff] transition-all duration-1200  ease-in-out ;
