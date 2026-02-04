@@ -7,7 +7,7 @@ import Threads from "../ui/Threads";
 
 const HomeHero = () => {
   return (
-    <section className="relative overflow-hidden pt-35 bg-gradient-brand-200-100-50">
+    <section className="relative overflow-hidden pt-35 pb-15 bg-gradient-brand-200-100-50">
       {/* Background effect */}
       <div className="absolute inset-0">
         <div className="w-full h-[600px] relative">
@@ -38,7 +38,7 @@ const HomeHero = () => {
         </div>
 
         {/* Buttons */}
-        {/* <div className="flex gap-8 justify-center items-center">
+        <div className="flex gap-8 justify-center items-center">
           <NavLink
             to="/service_enquiry"
             className="relative group overflow-hidden button bg-white border-black border inline-flex items-center justify-center px-6 py-3 sm:px-8"
@@ -54,7 +54,7 @@ const HomeHero = () => {
             <span className="absolute inset-0 bg-[#8be0ff5b] rounded-lg -translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out" />
             <span className="relative z-10">Contact Us</span>
           </NavLink>
-        </div> */}
+        </div>
       </div>
     </section>
   );
