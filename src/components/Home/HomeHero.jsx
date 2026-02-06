@@ -14,7 +14,7 @@ const HomeHero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center gap-10 px-4 border">
+      <div className="relative z-10 flex flex-col items-center gap-10 px-4 ">
         {/* Text Content */}
         <div className=" w-full lg:w-4xl flex flex-col items-center gap-8 text-center">
           <div className="group flex items-center justify-center gap-5 rounded-2xl px-5 py-2 lg:w-150">

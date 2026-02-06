@@ -62,7 +62,7 @@ const Footer = () => {
     <div className="w-full ">
       <div className="flex flex-col justify-center items-center w-full bg-gradient-brand-400-300-400">
         {/* For First Section */}
-        <div className=" px-5 sm:px-10 md:px-25 lg:px-30 border w-full py-16 flex justify-center flex-col items-center gap-10 bg-gradient-brand-400-300-400">
+        <div className=" px-5 sm:px-10 md:px-25 lg:px-30 w-full py-16 flex justify-center flex-col items-center gap-10 bg-gradient-brand-400-300-400">
           {/* For Logo And Email Section */}
           <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 justify-between items-start gap-6 ">
             <div className="flex justify-start items-start">

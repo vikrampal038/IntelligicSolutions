@@ -32,7 +32,7 @@ const Section = () => {
 
             <NavLink
               to="/contact"
-              className="relative group overflow-hidden button inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-3"
+              className="relative group overflow-hidden button inline-flex items-center justify-center px-3 py-2  lg:px-6 lg:py-3"
             >
               {/* Hover background */}
               <span className="absolute inset-0 bg-[#8be0ff5b] border rounded-lg -translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out z-0"></span>

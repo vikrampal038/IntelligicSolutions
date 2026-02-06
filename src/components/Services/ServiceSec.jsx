@@ -34,7 +34,7 @@ const ServiceSec = () => {
 
           {/* Maine Section */}
           {ServicesSections.map((section, index) => (
-            <ServiceSection key={index} section={section} />
+            <ServiceSection key={index} data={section} />
           ))}
         </div>
       </div>

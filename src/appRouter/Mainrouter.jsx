@@ -7,6 +7,7 @@ import Blog from "@/Pages/Blog";
 import Contact from "@/Pages/Contact";
 import BlogDetail from "@/Pages/BlogDetail";
 import ServiceEnquiry from "@/Pages/ServiceEnquiry";
+import Game from "@/Pages/Game";
 
 const MainRouter = () => {
   return (
@@ -19,6 +20,7 @@ const MainRouter = () => {
         <Route path="/blog/:slug" element={<BlogDetail />} />
         <Route path="/contact" element={<Contact />} />
         <Route path='/service_enquiry' element={<ServiceEnquiry />} />
+        <Route path='/game' element={<Game />} />
       </Routes>
     </>
   );
