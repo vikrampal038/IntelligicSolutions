@@ -10,7 +10,11 @@ const BlogDetail = () => {
     getSingleBlog(slug).then(setBlog);
   }, [slug]);
 
-  if (!blog) return null;
+  if (!blog) {
+    return (
+      <div className="text-center py-20 text-gray-500">Loading blog...</div>
+    );
+  }
 
   return (
     <article className="max-w-4xl mx-auto px-4 pb-24 pt-14">

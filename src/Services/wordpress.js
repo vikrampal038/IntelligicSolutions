@@ -6,9 +6,7 @@ export const getBlogs = async () => {
 };
 
 export const getSingleBlog = async (slug) => {
-  const res = await fetch(
-    `${BASE_URL}/posts?slug=${slug}&_embed`
-  );
+  const res = await fetch(`${BASE_URL}/posts?slug=${slug}&_embed`);
   const data = await res.json();
-  return data[0];
+  return data.length ? data[0] : null;
 };

@@ -24,7 +24,7 @@ const Blogsec = () => {
             {blogs.map((blog) => (
               <Link
                 key={blog.id}
-                to={`/blog/${blog.slug}`}
+                // to={`/blog/${blog.slug}`}
                 className="border border-slate-800 rounded-sm bg-[#e0f6ff] overflow-hidden hover:shadow-lg transition"
               >
                 {/* Featured Image */}
