@@ -59,7 +59,7 @@ const Navbar = () => {
 
       {/* Mobile / Tablet Menu */}
       <div
-        className={`fixed top-0 right-0 w-full  sm:w-70 h-110 rounded-bl-2xl bg-gradient-brand-500-300-200 z-50 transform transition-transform duration-500 ${
+        className={`fixed top-0 right-0 w-50 sm:w-70 h-95 rounded-bl-md bg-gradient-brand-500-300-200 z-50 transform transition-transform duration-500 ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -69,7 +69,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        <div className="flex flex-col items-center gap-8 mt-12 text-xl font-bold">
+        <div className="flex flex-col items-center gap-4 text-xl font-bold">
           {navLinks.map((item) => (
             <NavLink
               key={item.name}
@@ -85,9 +85,9 @@ const Navbar = () => {
             href="https://wa.me/919029965109?text=Hello,%20I’m%20interested%20in%20your%20services."
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-6 px-6 py-3 border border-[#00AEEF] rounded"
+            className=" px-6 py-1 border border-[#00AEEF] rounded cart-shadow"
           >
-            Start a Conversation
+            let's Talk
           </a>
         </div>
       </div>
